@@ -1,0 +1,48 @@
+---
+title: "Pacote Contas"
+author: "Samuel Macêdo"
+date: "18/02/2021"
+output:
+  github_document:
+    fig_width: 9
+    fig_height: 5
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Este é um pacote simples apenas para demosntração em aula de como construir um pacote em R e subir para o github.
+Este pacote possui duas funções: somar e subtrair.
+
+## Instalação
+
+Para instalar o pacote use os comando abaixo
+
+```{r, eval=FALSE}
+devtools::install_github("samuelmacedo83/contas")
+```
+
+Não se esqueça de rodar o pacote
+
+```{r message=FALSE, warning=FALSE}
+library(contas)
+```
+
+## Usando as funções
+
+Esta função serve para somar (vou por o resultado abaixo)
+
+```{r}
+somar(2, 3)
+```
+
+Esta função subtrai (desta vez, não vou por o resultado)
+
+```{r, eval=FALSE}
+subtrair(4, 3)
+```
+
+
+
+
